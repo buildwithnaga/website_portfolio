@@ -1,3 +1,4 @@
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
@@ -8,5 +9,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  preview: {
+    allowedHosts: ['portfolio-y6c5.onrender.com'],
+  },
 })
-
